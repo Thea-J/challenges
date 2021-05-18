@@ -9,7 +9,7 @@ test('renders Topics component Cloud header', () => {
     expect(headerElement).toBeInTheDocument();
 });
 
-// Tests Topics props has the correct data
+// Tests Topics props renders correctly on the screen
 test ('renders Topic Component with the topicsArray prop', () => {
     const renderTopics = render(<Topics topicsArray = {topicsObject.topics}/>);
     const findTopicLabel = renderTopics.getByText(topicsObject.topics[0].label)
