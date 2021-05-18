@@ -8,7 +8,7 @@ export class Topics extends Component {
         return this.props.topicsArray.map((topicObject) => {
             return (
             <li key = {topicObject.id} 
-            className = {this.setTopicClass(topicObject.sentimentScore)}> 
+            className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.sentimentScore)].join(' ')}>
                 {topicObject.label} 
             </li>
             )
@@ -16,7 +16,7 @@ export class Topics extends Component {
     }
 
     //Given a sentimentScore, return a sting that will be set as a class value
-    setTopicClass = (sentimentScore) => {
+    setTopicColor = (sentimentScore) => {
         if (sentimentScore > 60){
             return "highSentimentScore"
         }
@@ -25,6 +25,28 @@ export class Topics extends Component {
         }
         else {
             return "midSentimentScore"
+        }
+    }
+
+    //Given a sentimentScore, return a sting that will be set as a class value
+    setTopicSize = (sentimentScore) => {
+        if (sentimentScore >= 100){
+            return "fontSizeSix"
+        }
+        else if (sentimentScore >=80 && sentimentScore <= 99){
+            return "fontSizeFive"
+        }
+        else if (sentimentScore >=60 && sentimentScore <= 79){
+            return "fontSizeFour"
+        }
+        else if (sentimentScore >=40 && sentimentScore <= 59){
+            return "fontSizeThree"
+        }
+        else if (sentimentScore >=20 && sentimentScore <= 39){
+            return "fontSizeTwo"
+        }
+        else {
+            return "fontSizeOne"
         }
     }
 
