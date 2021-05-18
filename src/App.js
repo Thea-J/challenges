@@ -15,7 +15,7 @@ export class App extends Component {
     return (
       <div>
         <h1> My Topics Challenge </h1>
-        <Topics />
+        <Topics topicsArray = {topicsObject.topics}/>
       </div>
     )
   }
