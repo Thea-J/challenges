@@ -1,7 +1,7 @@
 // My plan on how to execute the requirements for the topics cloud challenge
 
 // ---------------------------------- App Container
-// Import topics.json & store in state of App.js 
+// Import topics.json & store in state of App.js ✅
 // Render a topics container & pass the json file as props - This will render the topics cloud
 // Render a topics container & pass the json file as props  - This will render the metadata when a topic is clicked
 

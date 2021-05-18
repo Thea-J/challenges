@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import topicsObject from './brandwatch_challenge_docs/topics.json'
+import Topics from './Topics'
 
 export class App extends Component {
 
@@ -14,6 +15,7 @@ export class App extends Component {
     return (
       <div>
         <h1> My Topics Challenge </h1>
+        <Topics />
       </div>
     )
   }
