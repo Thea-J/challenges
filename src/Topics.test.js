@@ -15,3 +15,10 @@ test ('renders Topic Component with the topicsArray prop', () => {
     const findTopicLabel = renderTopics.getByText(topicsObject.topics[0].label)
     expect(findTopicLabel).toBeTruthy;
 });
+
+// Tests Topics color is determined by sentimentScore
+test ('renders each topic text color based on its sentimentScore', () => {
+    render(<Topics topicsArray = {topicsObject.topics}/>);
+    const listElement = screen.getByText('Berlin');
+    expect(listElement).toHaveClass('highSentimentScore')
+});
