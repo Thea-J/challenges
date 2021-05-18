@@ -8,9 +8,9 @@
 
 // ---------------------------------- Topics Container
 // label property of each topic should be the 'word' in the word cloud ✅
-// if sentiment score > 60 topic label is green 
-// if sentiment score < 40 topic label is red 
-// Other topics should be displayed in grey
+// if sentiment score > 60 topic label is green ✅
+// if sentiment score < 40 topic label is red ✅
+// Other topics should be displayed in grey ✅
 
 // Each topic should have one of 6 different text sizes: 
 // The most popular topics largest, and least popular smallest 

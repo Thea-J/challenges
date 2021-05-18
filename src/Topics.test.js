@@ -23,3 +23,10 @@ test ('renders each topic text color based on its sentimentScore', () => {
     expect(listElement).toHaveClass('highSentimentScore')
     // expect(listElement).toHaveStyle({color: 'green'})
 });
+
+// Tests Topics size is determined by sentimentScore
+test ('renders each topic text size based on its sentimentScore', () => {
+    render(<Topics topicsArray = {topicsObject.topics}/>);
+    const listElement = screen.getByText('Hammered');
+    expect(listElement).toHaveClass('fontSizeTwo')
+});
