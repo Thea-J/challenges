@@ -21,4 +21,6 @@ export class Topics extends Component {
     }
 }
 
+Topics.defaultProps = { topicsArray : [] }
+
 export default Topics

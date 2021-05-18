@@ -2,12 +2,12 @@
 
 // ---------------------------------- App Container
 // Import topics.json & store in state of App.js ✅
-// Render a topics container & pass the json file as props - This will render the topics cloud
-// Render a topics container & pass the json file as props  - This will render the metadata when a topic is clicked
+// Render a topics container & pass the json file as props - This will render the topics cloud ✅
+// Render a metadata container & pass the json file as props  - This will render the metadata when a topic is clicked
 
 
 // ---------------------------------- Topics Container
-// label property of each topic should be the 'word' in the word cloud 
+// label property of each topic should be the 'word' in the word cloud ✅
 // if sentiment score > 60 topic label is green 
 // if sentiment score < 40 topic label is red 
 // Other topics should be displayed in grey
