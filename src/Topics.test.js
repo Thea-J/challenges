@@ -1,5 +1,5 @@
 import Topics from './Topics';
-import { render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 // Tests the Topic container renders without errors
 test('renders Topics component Cloud header', () => {
