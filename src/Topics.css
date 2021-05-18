@@ -1,0 +1,11 @@
+.highSentimentScore{
+    color: green
+}
+
+.midSentimentScore{
+    color: grey
+}
+
+.lowSentimentScore{
+    color: red
+}
