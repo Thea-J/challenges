@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import topicsObject from './brandwatch_challenge_docs/topics.json'
-import Topics from './Topics'
-import TopicMetadata from './TopicMetadata'
+import React, { Component } from 'react';
+import topicsObject from './brandwatch_challenge_docs/topics.json';
+import Topics from './Topics';
+import TopicMetadata from './TopicMetadata';
 
 export class App extends Component {
 
@@ -25,7 +25,7 @@ export class App extends Component {
       <div>
         <h1> My Topics Challenge </h1>
         <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
-        <TopicMetadata />
+        <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} />
       </div>
     )
   }
