@@ -8,12 +8,16 @@ export class App extends Component {
   constructor(){
     super();
     this.state = {
-      topicsObject : topicsObject
+      topicsObject : topicsObject,
+      exposeMetadata : false,
+      selectedTopic : {}
     }
   }
 
   selectTopic = (event) => {
-
+    let topicId = event.target.id
+    let selectedTopic = topicsObject.topics.find((topicElement) => { return topicElement.id === topicId})
+    this.setState({exposeMetadata: true , selectedTopic : selectedTopic})
   }
 
   render() {
