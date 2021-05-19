@@ -12,11 +12,15 @@ export class App extends Component {
     }
   }
 
+  selectTopic = (event) => {
+
+  }
+
   render() {
     return (
       <div>
         <h1> My Topics Challenge </h1>
-        <Topics topicsArray = {topicsObject.topics}/>
+        <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
         <TopicMetadata />
       </div>
     )
