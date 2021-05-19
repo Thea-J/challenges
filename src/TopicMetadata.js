@@ -4,7 +4,7 @@ export class TopicMetadata extends Component {
     render() {
         return (
             <div>
-                
+                <h3> Topic Metadata </h3>                
             </div>
         )
     }
