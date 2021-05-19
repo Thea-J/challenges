@@ -12,9 +12,11 @@
 // if sentiment score < 40 topic label is red ✅
 // Other topics should be displayed in grey ✅
 
-// Each topic should have one of 6 different text sizes: 
-// The most popular topics largest, and least popular smallest 
+// Each topic should have one of 6 different text sizes: ✅
+// The most popular topics largest, and least popular smallest ✅
 
+// Possible refactor for setting size & colour is using a dictionary to store { sentimentScore: "AClassName" }
+// Possible refactor store the setting functions in an array & pass the array to the className attr
 
 // ---------------------------------- Metadata Container
 // When a topic is clicked, metadata about the topic should be displayed 
