@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import './TopicMetadata.css';
 
 export class TopicMetadata extends Component {
 
     renderSentimentBreakdown = (sentiment) => {
         let sentimentArray = Object.keys(sentiment).reverse()
         return sentimentArray.map ((sentimentType) => {
-            return  (<dd key = {sentimentType}> {sentimentType} Mentions: {sentiment[sentimentType]} </dd>)
+            return  (<dd key = {sentimentType} className = {sentimentType}> {sentimentType} Mentions: {sentiment[sentimentType]} </dd>)
         })
     }
 
