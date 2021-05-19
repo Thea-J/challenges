@@ -53,7 +53,7 @@ export class Topics extends Component {
     render() {
         return (
             <div>
-                <h3> Click On A Topic To View Sentiment Breakdown </h3>
+                <h3> Select A Topic For More Details </h3>
                 <dl> {this.renderTopics()} </dl>
             </div>
         )

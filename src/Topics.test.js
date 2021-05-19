@@ -1,11 +1,11 @@
 import Topics from './Topics';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import topicsObject from './brandwatch_challenge_docs/topics.json'
 
 // Tests the Topic container renders without errors
 test('renders Topics component Cloud header', () => {
     render(<Topics />);
-    const headerElement = screen.getByText('Click On A Topic To View Sentiment Breakdown');
+    const headerElement = screen.getByText('Select A Topic For More Details');
     expect(headerElement).toBeInTheDocument();
 });
 
@@ -29,4 +29,13 @@ test ('renders each topic text size based on its sentimentScore', () => {
     render(<Topics topicsArray = {topicsObject.topics}/>);
     const listElement = screen.getByText('Hammered');
     expect(listElement).toHaveClass('fontSizeTwo')
+});
+
+//Tests the onClick event handler is fired when a topic is clicked
+test('when a topic is clicked, the selectTopic event handler is fired', () => {
+    const selectTopic = jest.fn()
+    render(<Topics topicsArray = {topicsObject.topics} handleTopicClick = {selectTopic} />);
+    const listElement = screen.getByText('Berlin');
+    fireEvent.click(listElement)
+    expect(selectTopic).toBeCalled();
 });
