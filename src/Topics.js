@@ -8,7 +8,8 @@ export class Topics extends Component {
         return this.props.topicsArray.map((topicObject) => {
             return (
             <dt key = {topicObject.id} 
-            className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.sentimentScore)].join(' ')}>
+            className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.sentimentScore)].join(' ')}
+            onClick = {this.props.handleTopicClick} > 
                 {topicObject.label} 
             </dt>
             )
