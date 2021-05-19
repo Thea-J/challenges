@@ -1,6 +1,6 @@
-import Topics from './Topics';
+import Topics from '../Topics';
 import { render, screen, fireEvent } from '@testing-library/react';
-import topicsObject from './brandwatch_challenge_docs/topics.json'
+import topicsObject from '../brandwatch_challenge_docs/topics.json'
 
 // Tests the Topic container renders without errors
 test('renders Topics component Cloud header', () => {

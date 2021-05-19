@@ -37,6 +37,7 @@ $ git clone git@github.com:Thea-J/challenges.git
 
 Enter the repository
 $ cd BW
+
 Install dependencies
 $ npm install
 

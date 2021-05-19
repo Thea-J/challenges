@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './TopicMetadata.css';
+import './styles/TopicMetadata.css';
 
 export class TopicMetadata extends Component {
 

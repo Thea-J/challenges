@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import topicsObject from './brandwatch_challenge_docs/topics.json';
 import Topics from './Topics';
 import TopicMetadata from './TopicMetadata';
+import './styles/App.css'
 
 export class App extends Component {
 

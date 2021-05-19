@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Topics.css';
+import './styles/Topics.css';
 
 export class Topics extends Component {
 

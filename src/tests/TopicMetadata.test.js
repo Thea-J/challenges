@@ -1,6 +1,6 @@
-import TopicMetadata from './TopicMetadata';
+import TopicMetadata from '../TopicMetadata';
 import { render, screen } from '@testing-library/react';
-import topicsObject from './brandwatch_challenge_docs/topics.json';
+import topicsObject from '../brandwatch_challenge_docs/topics.json';
 
 // Tests the TopicMetadata container renders without errors
 test('renders TopicMetadata component header', () => {
