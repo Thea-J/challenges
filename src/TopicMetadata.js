@@ -22,7 +22,7 @@ export class TopicMetadata extends Component {
         }
         return (
             <div>
-                {/* <h3> Topic Metadata </h3> */}
+                <h3 id = 'metadataHeader'> Topic Metadata </h3>
             </div>
         )
     }
