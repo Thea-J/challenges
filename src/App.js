@@ -3,6 +3,7 @@ import topicsObject from './brandwatch_challenge_docs/topics.json';
 import Topics from './Topics';
 import TopicMetadata from './TopicMetadata';
 import './styles/App.css'
+import logo from './bw_logo.png'
 
 export class App extends Component {
 
@@ -24,6 +25,7 @@ export class App extends Component {
   render() {
     return (
       <div>
+      <img src = {logo}/>
         <h1> My Topics Challenge </h1>
         <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
         <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} />
