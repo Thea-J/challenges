@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import topicsObject from './brandwatch_challenge_docs/topics.json';
+import Topics from './Topics';
+import TopicMetadata from './TopicMetadata';
+import './styles/App.css'
+import logo from './bw_logo.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      topicsObject : topicsObject,
+      exposeMetadata : false,
+      selectedTopic : {}
+    }
+  }
+
+  selectTopic = (event) => {
+    let topicId = event.target.id
+    let selectedTopic = topicsObject.topics.find((topicElement) => { return topicElement.id === topicId})
+    this.setState({exposeMetadata: true , selectedTopic : selectedTopic})
+  }
+
+  render() {
+    return (
+      <div>
+      <img src = {logo} alt = 'Brandwatch logo'/>
+        <h1>
+          <span id = 'blue'>My </span>
+          <span id = 'pink'>Topics </span>
+          <span id = 'yellow'>Challenge</span>
+        </h1>
+        <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
+        <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App

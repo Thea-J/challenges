@@ -1,0 +1,55 @@
+.highSentimentScore{
+    color: green
+}
+
+.midSentimentScore{
+    color: grey
+}
+
+.lowSentimentScore{
+    color: red
+}
+
+.fontSizeSix{
+    font-size: 60px
+}
+
+.fontSizeFive{
+    font-size: 50px
+}
+
+.fontSizeFour{
+    font-size: 40px
+}
+
+.fontSizeThree{
+    font-size: 30px
+}
+
+.fontSizeTwo{
+    font-size: 20px
+}
+
+.fontSizeOne{
+    font-size: 10px
+}
+
+dl {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+
+dt {
+  margin-left: 15px;
+}
+
+dt:hover {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+h3#topics{
+    text-align: center;
+}

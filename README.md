@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# BW Topics Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A SPA that displays a group of topics and highlights each topic's popularity.
 
-## Available Scripts
+### Table of Contents
 
-In the project directory, you can run:
+- [Demo](#Demo) 
+- [Technologies](#Technologies)
+- [Features](#Features)
+- [Installation and Usage](#Installation-and-Usage)
+- [License](#license)
 
-### `yarn start`
+## **Demo**
+![Demo gif](/public/demo.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Technologies**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+BW Topics Challenge was created with: React.js
 
-### `yarn test`
+BW Topics Challenge was bootstrapped with: [Create React App](https://github.com/facebook/create-react-app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Features**
+This responsive Web App displays a group of topics based on their popularity in a cloud-like structure:
 
-### `yarn build`
+- Larger sized green topics are more popular than medium sized grey topics, which in turn are more popular than small red topics
+- When a topic is clicked, metadata regarding the topic's sentiment scores are displayed
+- Positive scores are displayed in green, neutral scores are displayed in grey and negative scores are displayed in red.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Installation and Usage**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To view BW Topics Challenge on your local machine:
+- Ensure you have [Git](https://github.com/git-guides/install-git) and [Node Package Manager](https://www.npmjs.com/get-npm) installed
+- Clone this repository and launch the program 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+Clone this repository
+$ git clone git@github.com:Thea-J/challenges.git
 
-### `yarn eject`
+Enter the repository
+$ cd BW
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install dependencies
+$ npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Launch
+$ npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Learn More
+## **License**
+MIT License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copyright (c) 2021 Dorothy John
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Code Splitting
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
