@@ -33,3 +33,18 @@
 .fontSizeOne{
     font-size: 10px
 }
+
+dl {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+
+dt {
+  margin-left: 15px;
+}
+
+h3#topics{
+    text-align: center;
+}

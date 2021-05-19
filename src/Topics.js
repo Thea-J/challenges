@@ -55,7 +55,7 @@ export class Topics extends Component {
     render() {
         return (
             <div>
-                <h3> Select A Topic For More Details </h3>
+                <h3 id = "topics" > Select A Topic For More Details </h3>
                 <dl> {this.renderTopics()} </dl>
             </div>
         )

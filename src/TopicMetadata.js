@@ -13,7 +13,7 @@ export class TopicMetadata extends Component {
     render() {
         if (this.props.exposeMetadata){
             return(
-                <div>
+                <div id = 'metadata'>
                  <h3> {this.props.selectedTopic.label} Sentiment Breakdown </h3>
                  <p>Total Mentions: {this.props.selectedTopic.volume} </p>
                 {this.renderSentimentBreakdown(this.props.selectedTopic.sentiment)} 
@@ -22,7 +22,7 @@ export class TopicMetadata extends Component {
         }
         return (
             <div>
-                <h3> Topic Metadata </h3>
+                {/* <h3> Topic Metadata </h3> */}
             </div>
         )
     }

@@ -5,3 +5,16 @@
 .negative{
     color: red
 }
+
+div#metadata {
+    text-align: right;
+    margin-right: 15px;
+}
+
+p {
+    font-size: 18px
+}
+
+dd {
+    font-size: 18px
+}
