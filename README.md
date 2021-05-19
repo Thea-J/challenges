@@ -11,6 +11,7 @@ A SPA that displays a group of topics and highlights each topic's popularity.
 - [License](#license)
 
 ## **Demo**
+![Demo gif](/public/demo.gif)
 
 ## **Technologies**
 

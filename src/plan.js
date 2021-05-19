@@ -34,8 +34,8 @@
 
 // ---------------------------------- Additional features
 // Documentation ✅
-// Mimic Brandwatch website, include logo & match company colours
-// When a user hovers over a topic, it moves
+// Mimic Brandwatch website, include logo & match company colours ✅
+// When a user hovers over a topic, it moves ✅
 
 // I added the most & least mentions array to the metadata because I thought as a company, I would want to know where most of my audience is talking about me - this would give me a good idea of where to advertise more / least
 
