@@ -45,6 +45,11 @@ dt {
   margin-left: 15px;
 }
 
+dt:hover {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
 h3#topics{
     text-align: center;
 }

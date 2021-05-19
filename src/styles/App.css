@@ -1,3 +1,24 @@
 h1 {
   text-align: center
 }
+
+#blue {
+  color: rgb(0, 132, 255)
+}
+
+#pink {
+  color: rgb(209, 106, 124)
+}
+
+#yellow {
+  color: rgba(255, 196, 0, 0.986)
+}
+
+
+img {
+  width: 150px;
+}
+
+div {
+  font-family: 'helvetica Neue'
+}

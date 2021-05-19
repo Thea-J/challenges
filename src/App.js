@@ -25,8 +25,12 @@ export class App extends Component {
   render() {
     return (
       <div>
-      <img src = {logo}/>
-        <h1> My Topics Challenge </h1>
+      <img src = {logo} alt = 'Brandwatch logo'/>
+        <h1>
+          <span id = 'blue'>My </span>
+          <span id = 'pink'>Topics </span>
+          <span id = 'yellow'>Challenge</span>
+        </h1>
         <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
         <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} />
       </div>
