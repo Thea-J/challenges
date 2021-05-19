@@ -5,7 +5,7 @@ import topicsObject from './brandwatch_challenge_docs/topics.json'
 // Tests the Topic container renders without errors
 test('renders Topics component Cloud header', () => {
     render(<Topics />);
-    const headerElement = screen.getByText('Topics Cloud');
+    const headerElement = screen.getByText('Click On A Topic To View Sentiment Breakdown');
     expect(headerElement).toBeInTheDocument();
 });
 

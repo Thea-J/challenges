@@ -7,10 +7,10 @@ export class Topics extends Component {
     renderTopics = () => {
         return this.props.topicsArray.map((topicObject) => {
             return (
-            <li key = {topicObject.id} 
+            <dt key = {topicObject.id} 
             className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.sentimentScore)].join(' ')}>
                 {topicObject.label} 
-            </li>
+            </dt>
             )
         })
     }
@@ -53,8 +53,8 @@ export class Topics extends Component {
     render() {
         return (
             <div>
-                <h3> Topics Cloud </h3>
-                <ul> {this.renderTopics()} </ul>
+                <h3> Click On A Topic To View Sentiment Breakdown </h3>
+                <dl> {this.renderTopics()} </dl>
             </div>
         )
     }
