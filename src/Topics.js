@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './styles/Topics.css';
 
 export class Topics extends Component {
@@ -13,44 +13,44 @@ export class Topics extends Component {
             onClick = {this.props.handleTopicClick} > 
                 {topicObject.label} 
             </dt>
-            )
-        })
-    }
+            );
+        });
+    };
 
     //Given a sentimentScore, return a sting that will be set as a class value
     setTopicColor = (sentimentScore) => {
         if (sentimentScore > 60){
-            return "highSentimentScore"
+            return "highSentimentScore";
         }
         else if (sentimentScore < 40){
-            return "lowSentimentScore"
+            return "lowSentimentScore";
         }
         else {
-            return "midSentimentScore"
-        }
-    }
+            return "midSentimentScore";
+        };
+    };
 
     //Given a sentimentScore, return a sting that will be set as a class value
     setTopicSize = (sentimentScore) => {
         if (sentimentScore >= 100){
-            return "fontSizeSix"
+            return "fontSizeSix";
         }
         else if (sentimentScore >=80 && sentimentScore <= 99){
-            return "fontSizeFive"
+            return "fontSizeFive";
         }
         else if (sentimentScore >=60 && sentimentScore <= 79){
-            return "fontSizeFour"
+            return "fontSizeFour";
         }
         else if (sentimentScore >=40 && sentimentScore <= 59){
-            return "fontSizeThree"
+            return "fontSizeThree";
         }
         else if (sentimentScore >=20 && sentimentScore <= 39){
-            return "fontSizeTwo"
+            return "fontSizeTwo";
         }
         else {
-            return "fontSizeOne"
-        }
-    }
+            return "fontSizeOne";
+        };
+    };
 
     render() {
         return (
@@ -58,10 +58,10 @@ export class Topics extends Component {
                 <h3 id = "topics" > Select A Topic For More Details </h3>
                 <dl> {this.renderTopics()} </dl>
             </div>
-        )
-    }
+        );
+    };
 }
 
-Topics.defaultProps = { topicsArray : [] }
+Topics.defaultProps = { topicsArray : [] };
 
 export default Topics

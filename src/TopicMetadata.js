@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './styles/TopicMetadata.css';
 
 export class TopicMetadata extends Component {
 
     renderSentimentBreakdown = (sentiment) => {
-        let sentimentArray = Object.keys(sentiment).reverse()
+        let sentimentArray = Object.keys(sentiment).reverse();
         return sentimentArray.map ((sentimentType) => {
-            return  (<dd key = {sentimentType} className = {sentimentType}> {sentimentType} Mentions: {sentiment[sentimentType]} </dd>)
-        })
-    }
+            return  (<dd key = {sentimentType} className = {sentimentType}> {sentimentType} Mentions: {sentiment[sentimentType]} </dd>);
+        });
+    };
 
     render() {
         if (this.props.exposeMetadata){
@@ -18,14 +18,14 @@ export class TopicMetadata extends Component {
                  <p>Total Mentions: {this.props.selectedTopic.volume} </p>
                 {this.renderSentimentBreakdown(this.props.selectedTopic.sentiment)} 
                 </div>
-            )
-        }
+            );
+        };
         return (
             <div>
                 <h3 id = 'metadataHeader'> Topic Metadata </h3>
             </div>
-        )
-    }
+        );
+    };
 }
 
 export default TopicMetadata

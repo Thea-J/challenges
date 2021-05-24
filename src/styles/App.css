@@ -1,17 +1,17 @@
 h1 {
-  text-align: center
+  text-align: center;
 }
 
 #blue {
-  color: rgb(0, 132, 255)
+  color: rgb(0, 132, 255);
 }
 
 #pink {
-  color: rgb(209, 106, 124)
+  color: rgb(209, 106, 124);
 }
 
 #yellow {
-  color: rgba(255, 196, 0, 0.986)
+  color: rgba(255, 196, 0, 0.986);
 }
 
 
@@ -20,5 +20,5 @@ img {
 }
 
 div {
-  font-family: 'helvetica Neue'
+  font-family: 'helvetica Neue';
 }

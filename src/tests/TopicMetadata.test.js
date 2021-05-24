@@ -20,5 +20,5 @@ test('conditionally renders Topic Metadata when a topic is clicked', () => {
 test ('renders each topic text color based on its sentimentScore', () => {
     render(<TopicMetadata exposeMetadata = {true} selectedTopic = {topicsObject.topics[1]} />);
     const listElement = screen.getByText('positive Mentions: 2');
-    expect(listElement).toHaveClass('positive') 
+    expect(listElement).toHaveClass('positive');
 });

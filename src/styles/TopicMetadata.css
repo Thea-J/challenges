@@ -1,9 +1,9 @@
 .positive{
-    color: green
+    color: green;
 }
 
 .negative{
-    color: red
+    color: red;
 }
 
 div#metadata {
@@ -12,13 +12,13 @@ div#metadata {
 }
 
 p {
-    font-size: 18px
+    font-size: 18px;
 }
 
 dd {
-    font-size: 18px
+    font-size: 18px;
 }
 
 h3#metadataHeader {
-    color: white
+    color: white;
 }
