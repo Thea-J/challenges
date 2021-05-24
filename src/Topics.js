@@ -32,7 +32,6 @@ export class Topics extends Component {
 
     //Given a volume, return a sting that will be set as a class value
     setTopicSize = (volume) => {
-        console.log(volume)
         if (volume >= 50){
             return "fontSizeSix";
         }
@@ -51,9 +50,6 @@ export class Topics extends Component {
         else {
             return "fontSizeOne";
         };
-       // < 19 , 20 - 39 , 40 - 59, 60 - 79, 80 - 99, > 100  
-       // < 19 , 20 - 39 , 40 - 59, 60 - 79, 80 - 99, > 60  
-
     };
 
     render() {

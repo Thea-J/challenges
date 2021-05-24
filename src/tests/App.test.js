@@ -7,3 +7,10 @@ test('renders App container without errors', () => {
   const headerElement = screen.getByText('Challenge');
   expect(headerElement).toBeInTheDocument();
 });
+
+
+  
+// Tests the capitalizeFirstLetter returns a string with the first letter capitalized
+test('Returns a string with the first letter capitalized', () => {
+  expect(capitalizeFirstLetter('positive')).toBe('Positive');
+});
