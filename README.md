@@ -47,7 +47,25 @@ $ npm start
 
 ```
 
-- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+
+To test BW Topics Challenge on your local machine:
+
+```
+Run all tests 
+$ npm test 
+
+Run tests a specific file 
+$ npm test [FileName]
+```
+
+To build BW Topics Challenge for production: 
+
+```
+Build for production
+$ npm build
+```
 
 ## **License**
 MIT License
