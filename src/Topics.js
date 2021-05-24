@@ -9,7 +9,7 @@ export class Topics extends Component {
             return (
             <dt key = {topicObject.id} 
             id = {topicObject.id} 
-            className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.sentimentScore)].join(' ')}
+            className = {[this.setTopicColor(topicObject.sentimentScore), this.setTopicSize(topicObject.volume)].join(' ')}
             onClick = {this.props.handleTopicClick} > 
                 {topicObject.label} 
             </dt>
@@ -30,26 +30,30 @@ export class Topics extends Component {
         };
     };
 
-    //Given a sentimentScore, return a sting that will be set as a class value
-    setTopicSize = (sentimentScore) => {
-        if (sentimentScore >= 100){
+    //Given a volume, return a sting that will be set as a class value
+    setTopicSize = (volume) => {
+        console.log(volume)
+        if (volume >= 50){
             return "fontSizeSix";
         }
-        else if (sentimentScore >=80 && sentimentScore <= 99){
+        else if (volume >=40 && volume <= 49){
             return "fontSizeFive";
         }
-        else if (sentimentScore >=60 && sentimentScore <= 79){
+        else if (volume >=30 && volume <= 39){
             return "fontSizeFour";
         }
-        else if (sentimentScore >=40 && sentimentScore <= 59){
+        else if (volume >=20 && volume <= 29){
             return "fontSizeThree";
         }
-        else if (sentimentScore >=20 && sentimentScore <= 39){
+        else if (volume >=10 && volume <= 19){
             return "fontSizeTwo";
         }
         else {
             return "fontSizeOne";
         };
+       // < 19 , 20 - 39 , 40 - 59, 60 - 79, 80 - 99, > 100  
+       // < 19 , 20 - 39 , 40 - 59, 60 - 79, 80 - 99, > 60  
+
     };
 
     render() {
