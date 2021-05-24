@@ -22,6 +22,13 @@ export class App extends Component {
     this.setState({exposeMetadata: true , selectedTopic : selectedTopic})
   };
 
+  //Given a string, return the string with the first letter capitalized
+  capitalizeFirstLetter = (string) => {
+    let arrayOfCharacters = string.split('');
+    arrayOfCharacters[0] = arrayOfCharacters[0].toUpperCase();
+    return arrayOfCharacters.join('');
+  }; 
+
   render() {
     return (
       <div>
@@ -32,7 +39,7 @@ export class App extends Component {
           <span id = 'yellow'>Challenge</span>
         </h1>
         <Topics topicsArray = {topicsObject.topics} handleTopicClick = {this.selectTopic}/>
-        <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} />
+        <TopicMetadata exposeMetadata = {this.state.exposeMetadata} selectedTopic = {this.state.selectedTopic} capitalizeFirstLetter = {this.capitalizeFirstLetter}/>
       </div>
     );
   };
